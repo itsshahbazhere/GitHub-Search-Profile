@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile Viewer</title>
+    <link rel="icon" href="./assets/github-brands-solid-DXZupptj.svg" />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .lmShadow {
+        box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-CGsrmHQM.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C5LkuGlj.css">
+  </head>
+
+  <body>
+    <section
+      data-container
+      class="wrapper text-[#4b6a9b] w-full h-screen flex items-center justify-center relative text-[13px] overflow-x-hidden overflow-y-scroll"
+    >
+      <div class="max-w-[768px] absolute">
+        <div
+          data-header
+          data-textColor
+          class="flex items-center justify-between w-[300px] md:w-[500px] lg:w-[768px] px-4"
+        >
+          <h1 class="md:text-[2.5em] font-mono text-xl font-semibold">
+            Profile Viewer
+          </h1>
+
+          <div
+            data-theme
+            class="flex items-center justify-center gap-2 text-xs"
+          >
+            <p
+              data-themeName
+              class="tracking-[2.5px] uppercase md:text-lg sm:text-base font-mono"
+            ></p>
+            <i data-themeIcon class="md:text-lg sm:text-base"></i>
+          </div>
+        </div>
+
+        <div class="mb-4 mt-5">
+          <div
+            data-searchInput
+            class="lmShadow w-[300px] md:w-[500px] lg:w-[768px] bg-[#fefefe] flex rounded-xl md:rounded-lg relative items-center justify-center p-2 md:px-3"
+          >
+            <i
+              class="fa-solid fa-magnifying-glass pl-2 text-[#0079ff] text-sm md:text-base lg:text-lg"
+            ></i>
+            <input
+              data-input
+              type="text"
+              placeholder="Enter a GitHub username..."
+              class="bg-transparent placeholder:font-mono w-[80%] pl-2 border-none outline-none text-sm md:text-base lg:text-lg"
+            />
+            <p
+              data-wrongInput
+              class="lg:text-base whitespace-nowrap font-bold text-[#ff0000] font-mono hidden lg:block"
+            ></p>
+            <i
+              data-xMark
+              class="fa-solid fa-xmark mx-5 text-sm md:text-base lg:text-lg"
+            ></i>
+
+            <button
+              data-button
+              class="bg-[#0079ff] py-[8px] px-[16px] rounded-md text-white font-bold font-mono hover:bg-[#60abff] transition-colors text-sm md:text-base lg:text-lg"
+            >
+              Search
+            </button>
+          </div>
+
+          <p
+            data-wrongInputMobile
+            class="text-xs md:text-base font-bold text-[#ff0000] font-mono lg:hidden flex justify-start items-start md:pl-12 pl-10 mt-1"
+          ></p>
+        </div>
+
+        <div
+          data-userInformation
+          class="lmShadow bg-white flex rounded-xl md:rounded-lg shadow-md p-8 gap-8 w-[300px] md:w-[500px] lg:w-[768px]"
+        >
+          <div class="flex flex-col gap-6 w-[100%]">
+            <div class="flex md:gap-10 gap-4">
+              <img
+                data-imgIcon
+                src=""
+                class="md:w-[117px] md:h-[117px] w-[70px] h-[70px] rounded-full"
+              />
+              <div class="flex flex-col justify-center">
+                <p
+                  data-name
+                  class="md:text-[26px] text-base font-mono text-[#2b3442] font-semibold"
+                ></p>
+                <a
+                  data-userName
+                  href="#"
+                  class="text-[#0079ff] underline font-mono tracking-tight text md:text-base"
+                ></a>
+                <p data-joinedDate class="font-mono md:text-base text-xs"></p>
+              </div>
+            </div>
+
+            <div>
+              <p
+                data-bio
+                class="font-mono tracking-tight opacity-75 leading-tight md:text-base"
+              ></p>
+            </div>
+
+            <div data-followersContainer class="rounded-lg font-mono px-5 py-4">
+              <div class="flex justify-between md:text-[13px] text-[11px]">
+                <p class="w-[30%]">Repos</p>
+                <p class="w-[30%]">Followers</p>
+                <p class="w-[30%]">Following</p>
+              </div>
+              <div
+                data-followingCount
+                class="flex justify-between font-bold md:text-[22px] text-[16px] text-[#2b3442]"
+              >
+                <p data-repos class="w-[30%]"></p>
+                <p data-followers class="w-[30%]"></p>
+                <p data-following class="w-[30%]"></p>
+              </div>
+            </div>
+
+            <div
+              class="grid md:grid-cols-2 md:grid-rows-2 grid-rows-4 font-mono md:text-[15px] text-[13px] w-[100%]"
+            >
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot"></i>
+                <p data-location></p>
+              </div>
+
+              <div class="flex items-center gap-2 break-all">
+                <i class="fa-solid fa-link text-[#0079ff]"></i>
+                <a data-blog href="#" class="underline"></a>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <i class="fa-brands fa-twitter text-[#1DA1F2]"></i>
+                <a data-twitter href="#"></a>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-building"></i>
+                <a data-company href=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
