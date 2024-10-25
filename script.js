@@ -18,7 +18,7 @@ const wrongInputMobile = document.querySelector("[data-wrongInputMobile]");
 
 
 darkTheme();
-fetchUserInfo("shahbazalam26");
+fetchUserInfo("itsshahbazhere");
 
 let currentTheme = 'dark';
 theme.addEventListener('click', ()=>{
